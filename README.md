@@ -6,7 +6,7 @@
 
 ## 📋 Overview
 
-This library uses UNet to segment the gut of the zebrafish from the Bright Field images obtained using the Parthasarathy lab's LSFM. The model eliminates the need for time-consuming manual annotation of gut boundaries, significantly accelerating the research pipeline for studying gut microbiota dynamics and host-microbe interactions.
+This library[1] uses UNet to segment the gut of the zebrafish from the Bright Field images obtained using the Parthasarathy lab's LSFM. The model eliminates the need for time-consuming manual annotation of gut boundaries, significantly accelerating the research pipeline for studying gut microbiota dynamics and host-microbe interactions.
 
 **Authors:** Piyush Amitabh, Susana Márquez  
 **Institution:** University of Oregon, Parthasarathy Lab  
@@ -160,13 +160,16 @@ pip install -r requirements.txt
 ### Repository Structure
 ```
 Zebrafish-Image-Segmentation-ML/
-├── UNet_training.ipynb   # Main Jupyter notebook with model implementation
+├── zebrafish_gut_train_test_unet.ipynb   # Main Jupyter notebook with model implementation
+├── archive/test version code_v1.ipynb # Initial prototype code
 ├── data/                  # Dataset directory (not included in repo)
 │   ├── raw/              # Original microscopy images
 │   ├── processed/        # Stitched and resized images
 │   └── masks/            # Binary segmentation masks
-├── models/               # Saved model weights
-├── images/               # Figures for documentation
+├── model_predictions/               # Images with model predictions
+├── model_weights/                # Saved model weights
+│   └── zebrafish_gut_unet.h5  # Example trained model
+├── readme_images/               # Figures for documentation
 └── README.md            # This file
 ```
 
@@ -174,9 +177,9 @@ Zebrafish-Image-Segmentation-ML/
 
 #### Training the Model
 
-Open the Jupyter notebook to train the model:
+Open the Jupyter notebook's and run the sections to augment the data, train, and test the model:
 ```bash
-jupyter notebook UNet_training.ipynb
+jupyter notebook zebrafish_gut_train_test_UNet.ipynb
 ```
 
 Or use the following Python code:
