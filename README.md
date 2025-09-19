@@ -301,12 +301,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Susana Márquez** - susanam@uoregon.edu
 
 **Parthasarathy Lab**  
-University of Oregon  
+Department of Physics,
+University of Oregon,
 1585 E 13th Ave, Eugene, OR 97403
 
 ## Acknowledgments
 
-- Parthasarathy Lab
+- Parthasarathy Lab, University of Oregon
 - G3CF, Imaging Core facility, University of Oregon for microscopy support
 - Aquatic Animal Care Services, University of Oregon
 - TensorFlow/Keras development team
@@ -314,5 +315,5 @@ University of Oregon
 ---
 
 <p align="center">
-  <i>Advancing biomedical research through automated image analysis at the Parthasarathy Lab</i>
+  <i>Advancing biophysics research through automated image analysis at the Parthasarathy Lab</i>
 </p>
